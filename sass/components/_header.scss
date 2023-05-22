@@ -1,0 +1,87 @@
+.header {
+  border-bottom: 1px solid getBgColor("border-2");
+
+  &__box {
+    background-color: getBgColor("deafult-2");
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    vertical-align: middle;
+  }
+  &__mail,
+  &__tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: getColor("font-3");
+    fill: getColor("font-3");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__mail {
+    padding-right: 50px;
+  }
+  &__tel {
+    vertical-align: middle;
+  }
+  &__mail:hover,
+  &__tel:hover,
+  &__mail:focus,
+  &__tel:focus {
+    color: getColor("font-active");
+    fill: getBgColor("active");
+  }
+  &__envelope,
+  &__telephone {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 46px;
+    padding-left: 0;
+    padding-right: 345px;
+  }
+
+  &__underline {
+    position: relative;
+  }
+  &__underline:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background-color: getBgColor("active");
+    border-radius: 2px;
+  }
+
+  & .nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: getColor("font-1");
+    vertical-align: middle;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor("font-active");
+  }
+}

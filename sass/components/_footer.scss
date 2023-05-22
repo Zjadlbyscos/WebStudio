@@ -1,0 +1,111 @@
+.footer {
+  background-color: getBgColor("background-3");
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__logo {
+    padding-bottom: 20px;
+  }
+  &__box-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  &__box-contact--address {
+    color: getColor("font-2");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__box-contact--mail {
+    text-decoration-line: underline;
+    color: getColor("font-4");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__box-contact--tel {
+    color: getColor("font-4");
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__box-contact--address:hover,
+  &__box-contact--address:focus,
+  &__box-contact--mail:hover,
+  &__box-contact--mail:focus,
+  &__box-contact--tel:hover,
+  &__box-contact--tel:focus {
+    color: getColor("font-active");
+  }
+}
+.join-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 70px;
+  padding-top: 72px;
+
+  &__slogan {
+    color: getColor("font-2");
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;}
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 78px;
+  padding-top: 72px;
+
+  &__slogan {
+    color: getColor("font-2");
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__subscribe input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid getBgColor("border-3");
+    padding: 15px 16px;
+    background-color: getBgColor("background-3");
+    color: getBgColor("deafult-2");
+    line-height: 1.07;
+    outline: none;
+  }
+}
+.button-sign-in {
+  fill: getBgColor("deafult-2");
+  background-color: getBgColor("button-activebg");
+  padding: 10px 48px 10px 42px;
+  max-width: 200px;
+  max-height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}

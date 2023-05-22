@@ -1,0 +1,44 @@
+// zmienne kolorów bg font etc
+$colors: (
+  "deafult-1": #212121,
+  "deafult-2": #ffffff,
+
+  "active": #2196f3,
+
+  "button-activebg": #2196f3,
+  "button-unactivebg": #f5f4fa,
+
+  "background-1": #e5e5e5,
+  "background-2": #f5f4fa,
+  "background-3": #2f303a,
+
+  "border-1": #eeeeee,
+  "border-2": #ececec,
+  "border-3": rgba(255, 255, 255, 0.3),
+  "icon-1": #afb1b8,
+  "icon-2": rgba(255, 255, 255, 0.1),
+  "icon-3": #000000,
+
+  "background-photo-what-we-do": #2f303acc,
+  "background-fill-overlay": rgba(33, 150, 243, 0.9),
+);
+
+$fontcolors: (
+  "font-1": #212121,
+  "font-2": #ffffff,
+  "font-3": #757575,
+  "font-active": #2196f3,
+  "font-4": rgba(255, 255, 255, 0.6),
+);
+
+// czcionki
+$fontFamilyLogo: "Raleway", sans-serif;
+
+// zamiast map-get($color, 'background');
+@function getBgColor($key) {
+  @return map-get($colors, $key);
+}
+
+@function getColor($key) {
+  @return map-get($fontcolors, $key);
+}
