@@ -1,14 +1,18 @@
 
     {
+        // format
         "liveSassCompile.settings.formats": [
-            {
-                "format": "compressed",
-                "extensionName": ".min.css",
-                "savePath": "~/../css",
-            
-            }
+          {
+           
+            "format": "compressed",
+       
+            "extensionName": ".min.css",
+            // folder sass - skompilowanie main, wycofanie sie 1 poziom wyzej i wejdzie do css i tam zapisze
+            "savePath": "~/../css"
+          }
         ],
+        
         "liveSassCompile.settings.generateMap": true,
-        "liveSassCompile.settings.autoprefix": [ ">1%", "last 2 versions"]
-    }
-    
+       
+        "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+      }
