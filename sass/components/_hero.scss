@@ -1,9 +1,9 @@
 .hero {
-  display: none;
+  
   background: getBgColor("background-3");
 
   &__slogan {
-    background: getBgColor("background-3");
+    
     background: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
@@ -11,7 +11,9 @@
       ),
       url(../images/background-slogan.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     max-width: 1600px;
+    height: 400px;
     background-position: center;
     margin: 0 auto;
   }
@@ -22,18 +24,37 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding:118px 0;
+
   }
-}
+  @include tablet {
+  }
+  @include desktop {
+    &__slogan {
+      width: 100%;
+      height: 600px;
+      
+    }
+    &__flex-slogan{
+      padding: 200px 0;
+    }
+}}
+
 .slogan {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: getColor("font-2");
-  max-width: 696px;
-  max-height: 120px;
+  max-width:365px;
+
+}
+@include tablet {
+}
+@include desktop {
+  .slogan {
+    font-size: 44px;
+    max-width: 696px;}
 }
