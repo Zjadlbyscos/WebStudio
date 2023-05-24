@@ -1,69 +1,34 @@
-.attitude {
-  padding-bottom: 0px;
+.attitude{
+    padding-bottom: 0px;
 
-  &__box {
+&__box{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  &__image {
-    max-width: 450px;
+  flex-direction: row;
+  gap: 30px; 
+}
+&__image{
+    width: 270px;
     height: 120px;
     border-radius: 4px;
-    background-color: getBgColor('background-2');
+    background-color:getBgColor('background-2');
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  &__image--title {
+}
+&__image--title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 30px;
-    color:red;
-  }
-  &__image--content {
+}
+&__image--content{
     font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: getColor('font-3');
-    padding-top: 10px;
-  }
-  @include tablet {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color:  getColor('font-3');
+  padding-top: 10px;
+}
 
-    &__box{
-    flex-direction: column;
-    padding-bottom: 45px;}
-
-    &__image {
-      max-width: 354px;
-    }
-
-    &&--title {
-      text-align: left;
-    }
-
-    .our-strengths-list {
-      display: flex;
-      flex-wrap: wrap;
-      /* justify-content: center; */
-      gap: 30px;
-
-      & li {
-        flex-basis: calc((100% - 30px) / 2);
-      }
-    }
-  }
-  @include desktop {
-    padding-bottom: 94px;
-    &__logo {
-      max-width: 270px;
-    }
-    .our-strengths-list {
-      flex-wrap: nowrap;
-    }
-    /* dla oddzielenia sekcji wewnetrznych, nie mozna osobno dac sekcji bo najda 2 paddingi */
-  }
 }

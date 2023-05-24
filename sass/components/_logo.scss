@@ -1,25 +1,14 @@
 .logo {
   font-family: $fontFamilyLogo;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
   max-width: 145px;
   display: flex;
   flex-direction: row;
-  
-  @include tablet {
-    .logo{
-    max-width: 768px;
-    margin-right: 83px;
-  }}
-
-  @include desktop {
-    .logo{
-    font-size: 26px;
-    margin-right: 93px;
-  }}
+  margin-right: 93px;
 
   &__blue {
     color: getColor("font-active");
