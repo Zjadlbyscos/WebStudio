@@ -1,4 +1,5 @@
 .header {
+  display: none;
   border-bottom: 1px solid getBgColor("border-2");
 
   &__box {
@@ -7,8 +8,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px 15px;
     vertical-align: middle;
   }
   &__mail,

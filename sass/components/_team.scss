@@ -1,4 +1,5 @@
 .team {
+  display: none;
   background-color: getBgColor("background-2");
   &__box {
     display: flex;

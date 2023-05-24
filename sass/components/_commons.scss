@@ -11,17 +11,32 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 ul {
   list-style-type: none;
   padding-left: 0;
 }
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @include tablet {
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 }
 img {
   display: block;
