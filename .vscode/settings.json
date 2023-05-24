@@ -1,4 +1,4 @@
-{   "json.schemaDownload.enable": true,
+{   
     "liveSassCompile.settings.formats": [
         {
           "format": "compressed",
