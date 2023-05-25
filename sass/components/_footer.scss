@@ -1,21 +1,21 @@
 .footer {
-  display: none;
   background-color: getBgColor("background-3");
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
   }
   &__box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
   }
   &__logo {
     padding-bottom: 20px;
+    justify-content: center;
   }
   &__box-contact {
     display: flex;
@@ -24,6 +24,7 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    align-items:center;
   }
   &__box-contact--address {
     color: getColor("font-2");
@@ -49,13 +50,20 @@
   &__box-contact--tel:focus {
     color: getColor("font-active");
   }
+  @include tablet {
+&__container{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+  }
 }
 .join-us {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 70px;
-  padding-top: 72px;
+  align-items: center;
+  padding-bottom: 60px;
 
   &__slogan {
     color: getColor("font-2");
@@ -68,13 +76,17 @@
     flex-direction: row;
     gap: 10px;
   }
+  @include tablet {
+    padding-top: 60px;
+      }
 }
 .newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 78px;
-  padding-top: 72px;
+  align-items: center;
+  padding-bottom: 60px;
+ 
 
   &__slogan {
     color: getColor("font-2");
@@ -85,23 +97,26 @@
 
   &__subscribe {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 12px;
     align-items: center;
     justify-content: center;
   }
-  &__subscribe input {
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid getBgColor("border-3");
-    padding: 15px 16px;
-    background-color: getBgColor("background-3");
-    color: getBgColor("deafult-2");
-    line-height: 1.07;
-    outline: none;
-  }
 }
+.subscribe-email-form{
+  max-width: 450px;
+  min-width: 350px;
+ 
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid getBgColor("border-3");
+  padding: 15px 16px;
+  background-color: getBgColor("background-3");
+  color: getBgColor("deafult-2");
+  line-height: 1.07;
+  outline: none;
+}
+
 .button-sign-in {
   fill: getBgColor("deafult-2");
   background-color: getBgColor("button-activebg");
@@ -109,4 +124,15 @@
   max-width: 200px;
   max-height: 50px;
   box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+@include tablet {
+
+}
+
+
+
+@include desktop {
+
 }
