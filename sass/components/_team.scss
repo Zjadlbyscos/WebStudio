@@ -1,22 +1,26 @@
 .team {
-  display: none;
   background-color: getBgColor("background-2");
   &__box {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
+    justify-content: center;
   }
   &__gallery {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
   &__frame {
     background-color: getBgColor("deafult-2");
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    max-width: 450px;
+    text-align: center;
+    width: 100%;
   }
   &__name {
     font-weight: 500;
@@ -34,6 +38,26 @@
     letter-spacing: 0.03em;
     color: getColor("font-3");
   }
+  @include tablet {
+  }
+  &__frame{
+    max-width: 354px;
+  }
+
+@include desktop {
+  &__box{
+    gap: 50px;
+  }
+  &__frame{
+    max-width: 270px; 
+
+  }
+  }
+
+  & img {
+    width: 100%;
+      height: auto;
+  }
   .social {
     display: flex;
     flex-direction: row;
@@ -43,4 +67,6 @@
     padding-top: 16px;
     padding-bottom: 30px;
   }
-}
+  
+  }
+

@@ -33,7 +33,6 @@
     max-width: 450px;
   }
   @include tablet {
-    padding-bottom: 45px;
     &__box {
       flex-direction: row;
       display: flex;
