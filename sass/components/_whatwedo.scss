@@ -1,16 +1,9 @@
 .whatwedo {
-  display: none;
-  // display: flex;
+display:none;
   flex-direction: column;
   gap: 50px;
   padding-top: 0;
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
+
   &__box {
     display: flex;
     flex-direction: row;
@@ -35,5 +28,11 @@
     background-color: getBgColor("background-photo-what-we-do");
     color: getColor("font-2");
     cursor: default;
+  }
+  @include tablet {
+  }
+  @include desktop {
+display: flex;
+
   }
 }
