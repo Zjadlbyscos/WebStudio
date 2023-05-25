@@ -1,16 +1,17 @@
 .custommers {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 
   &__gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap:30px;
   }
   &__box {
-    width: 170px;
+   max-width: 210px;
     height: 92px;
     fill: getBgColor("icon-1");
     border: 1px solid getBgColor("icon-1");
@@ -25,4 +26,17 @@
     fill: getBgColor("active");
     cursor: pointer;
   }
+  @include tablet {
+  
+  &__box{
+    max-width: 226px;
+  }}
+
+@include desktop {
+    gap: 50px;
+  
+  &__box{
+    max-width: 170px; 
+
+  }}
 }
