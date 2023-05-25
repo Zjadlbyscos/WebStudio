@@ -116,3 +116,14 @@
   }}
 
 }
+ .nav-mobile {
+  
+  &__button {
+    fill:getColor("font-1");
+     background-color:getBgColor("deafult-2");
+     border: none;
+    &:hover,
+     &:focus {
+      fill: getBgColor('active');
+    }
+  }}
