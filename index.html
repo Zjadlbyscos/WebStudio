@@ -47,48 +47,68 @@
             </ul>
           </nav>
           <div class="header__contact">
-          <a class="header__mail" href="mailto:info@devstudio.com">
-            <svg class="header__envelope" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="header__tel" href="tel:+48111111111">
-            <svg class="header__telephone" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111
-          </a>
-          <!-- otwarcie okna modalnego mobile (js-open-menu) -->
-          <div class="nav-mobile">
-            <button
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-              class="nav-mobile__button js-open-menu"
-              type="button"
-            >
-              <svg width="40" height="40">
+            <a class="header__mail" href="mailto:info@devstudio.com">
+              <svg class="header__envelope" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a class="header__tel" href="tel:+48111111111">
+              <svg class="header__telephone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-            </button>
+              +48 111 111 111
+            </a>
+            <!-- otwarcie okna modalnego mobile (js-open-menu) -->
+            <div class="nav-button">
+              <button
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                class="nav-button__button js-open-menu"
+                type="button"
+              >
+                <svg width="40" height="40">
+                  <use href="./images/icons.svg#icon-mobile-menu-open"></use>
+                </svg>
+              </button>
+            </div>
+            <!--okno modalne(js-menu-container) -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <!--zamknięcie okna modalnego (js-close-menu) -->
+              <button class="menu-toggle js-close-menu">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </button>
+              <div class="nav-mobile">
+                <a class="nav-mobile__list" href="./index.html">Agencja</a>
+                <a class="nav-mobile__list" href="./portfolio.html"
+                  >Portfolio</a
+                >
+                <a class="nav-mobile__list" href="#">Kontakt</a>
+
+                <div class="nav-mobile__contact">
+                  <a class="nav-mobile__contact--tel" href="tel:+48111111111">
+                    +48 111 111 111
+                  </a>
+                  <a
+                    class="nav-mobile__contact--mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </div>
+                <div class="nav-mobile__social">
+                  <a class="nav-mobile__social--link" href="#">Instagram</a>
+                  <a class="nav-mobile__social--link" href="#">Twiter</a>
+                  <a class="nav-mobile__social--link" href="#">Facebook</a>
+                  <a class="nav-mobile__social--link" href="#">Linkedin</a>
+
+
+                </div>
+              </div>
+            </div>
           </div>
-          <!--okno modalne(js-menu-container) -->
-          <div class="menu-container js-menu-container" id="mobile-menu">
-            <p>widać ?</p>
-           <!--zamknięcie okna modalnego (js-close-menu) --> 
-            <button class="menu-toggle js-close-menu">
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-Vector"></use>
-              </svg>
-            </button>
-
-
-
-
-          </div>
-
-
-        </div>
         </div>
       </div>
     </header>
@@ -350,12 +370,20 @@
           <h2 class="section-title">Nasi klienci</h2>
           <ul class="custommers__gallery">
             <li class="custommers__box">
-              <svg max-width="106px" height="60.4px" class="custommers__box-logo">
+              <svg
+                max-width="106px"
+                height="60.4px"
+                class="custommers__box-logo"
+              >
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </li>
             <li class="custommers__box">
-              <svg max-width="106px" height="60.4px" class="custommers__box-logo">
+              <svg
+                max-width="106px"
+                height="60.4px"
+                class="custommers__box-logo"
+              >
                 <use href="./images/icons.svg#icon-Logo-1"></use>
               </svg>
             </li>
@@ -543,15 +571,15 @@
         </button>
       </div>
     </div>
-      <!-- skrypt dla okna modalnego -->
+    <!-- skrypt dla okna modalnego -->
     <script src="./js/modal.js"></script>
     <!-- skrypt dla okna modalnego -->
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

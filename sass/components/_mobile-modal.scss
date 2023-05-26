@@ -1,5 +1,7 @@
+@media (max-width: 767px) {
 .menu-container {
     width: 100%;
+    height: 100vh;
     position: fixed;
     inset: 0;
     padding: 32px;
@@ -39,3 +41,70 @@
 .menu-toggle:focus {
   fill: getBgColor('active');
 }
+
+.nav-mobile{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap:36px;
+    max-width:450px;
+  
+
+    &__list{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: getColor('font-1');
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: getBgColor('active');
+    }
+    }
+&__contact{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-weight: 500;
+   
+    &--tel{
+        font-size: 34px;
+        color: getColor('font-active');
+        text-decoration: none;
+        padding-top: 250px;
+    
+    }
+    &--mail{
+        font-size: 24px;
+        color: getColor('font-3');  
+        text-decoration: none;
+        padding-bottom: 40px;
+        
+    }}
+  &__social{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    &--link{
+        padding:10px;
+        font-size: 18px;
+        color: getColor('font-active');  
+        text-decoration: none;
+        border-right:1px solid getBgColor("border-2");
+        cursor: pointer;
+    }
+    
+  }
+
+
+}}
+
+@media (min-width: 768px) {
+    .menu-toggle,
+    .menu-container {
+      display: none;
+    }
+  }
