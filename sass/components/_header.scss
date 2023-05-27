@@ -16,6 +16,7 @@
     display: none;
    
   @include tablet{
+
     display:flex;
     font-weight: 500;
     font-size: 12px;
@@ -29,11 +30,6 @@
     
   }
   }
-
-  // &__mail {
-    
-  //   padding-right: 50px;
-  // }
    &__tel {
     
      vertical-align: middle;
@@ -58,6 +54,8 @@
   @include desktop{
     &__box{
       padding: 22px 15px;
+      justify-content: flex-start
+
     }
     &__contact{
       display: flex;
@@ -83,7 +81,7 @@
     // padding-left: 80px;
     // padding-right:0;
   }
-
+ 
   &__underline {
     position: relative;
   }
@@ -108,12 +106,22 @@
     vertical-align: middle;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &--active{
+      color: getColor("font-active");
+    }
   }
 
   &__link:hover,
   &__link:focus {
     color: getColor("font-active");
   }}
+  @include desktop{
+    &__list{
+    padding-left: 96px;
+    padding-right: 300px;
+    }
+
+  }
 
 }
  .nav-button  {
