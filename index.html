@@ -59,56 +59,21 @@
               </svg>
               +48 111 111 111
             </a>
-            <!-- otwarcie okna modalnego mobile (js-open-menu) -->
-            <div class="nav-button">
-              <button
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-                class="nav-button__button js-open-menu"
-                type="button"
-              >
-                <svg width="40" height="40">
-                  <use href="./images/icons.svg#icon-mobile-menu-open"></use>
-                </svg>
-              </button>
-            </div>
-            <!--okno modalne(js-menu-container) -->
-            <div class="menu-container js-menu-container" id="mobile-menu">
-              <!--zamknięcie okna modalnego (js-close-menu) -->
-              <button class="menu-toggle js-close-menu">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-              </button>
-              <div class="nav-mobile">
-                <a class="nav-mobile__list" href="./index.html">Agencja</a>
-                <a class="nav-mobile__list" href="./portfolio.html"
-                  >Portfolio</a
-                >
-                <a class="nav-mobile__list" href="#">Kontakt</a>
-
-                <div class="nav-mobile__contact">
-                  <a class="nav-mobile__contact--tel" href="tel:+48111111111">
-                    +48 111 111 111
-                  </a>
-                  <a
-                    class="nav-mobile__contact--mail"
-                    href="mailto:info@devstudio.com"
-                  >
-                    info@devstudio.com
-                  </a>
-                </div>
-                <div class="nav-mobile__social">
-                  <a class="nav-mobile__social--link" href="#">Instagram</a>
-                  <a class="nav-mobile__social--link" href="#">Twiter</a>
-                  <a class="nav-mobile__social--link" href="#">Facebook</a>
-                  <a class="nav-mobile__social--link" href="#">Linkedin</a>
-
-
-                </div>
-              </div>
-            </div>
           </div>
+          <!-- otwarcie okna modalnego mobile (js-open-menu) -->
+        
+            <button
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              class="nav-button js-open-menu"
+              type="button"
+            >
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-mobile-menu-open"></use>
+              </svg>
+            </button>
+        
+          
         </div>
       </div>
     </header>
@@ -573,7 +538,39 @@
     </div>
     <!-- skrypt dla okna modalnego -->
     <script src="./js/modal.js"></script>
-    <!-- skrypt dla okna modalnego -->
+    <!--okno modalne mobile menu (js-menu-container) -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <!--zamknięcie okna modalnego mobile (js-close-menu) -->
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <div class="nav-mobile">
+        <a class="nav-mobile__list" href="./index.html">Agencja</a>
+        <a class="nav-mobile__list" href="./portfolio.html">Portfolio</a>
+        <a class="nav-mobile__list" href="#">Kontakt</a>
+
+        <div class="nav-mobile__contact">
+          <a class="nav-mobile__contact--tel" href="tel:+48111111111">
+            +48 111 111 111
+          </a>
+          <a
+            class="nav-mobile__contact--mail"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com
+          </a>
+        </div>
+        <div class="nav-mobile__social">
+          <a class="nav-mobile__social--link" href="#">Instagram</a>
+          <a class="nav-mobile__social--link" href="#">Twiter</a>
+          <a class="nav-mobile__social--link" href="#">Facebook</a>
+          <a class="nav-mobile__social--link" href="#">Linkedin</a>
+        </div>
+      </div>
+    </div>
+    <!-- skrypt dla okna modalnego mobile menu-->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -116,9 +116,7 @@
   }}
 
 }
- .nav-button {
-  
-  &__button {
+ .nav-button  {
     fill:getColor("font-1");
      background-color:getBgColor("deafult-2");
      border: none;
@@ -129,4 +127,4 @@
     }
     @include tablet{
       display: none;}
-  }}
+  }
