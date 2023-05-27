@@ -58,5 +58,6 @@
 }
 @include desktop {
   .modal {
-    max-width: 528px;}
+    max-width: 528px;
+  width: 100%;}
 }
