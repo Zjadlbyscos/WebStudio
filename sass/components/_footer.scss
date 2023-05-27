@@ -57,6 +57,18 @@
       justify-content: space-around;
     }
   }
+  @include desktop {
+    &__container {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    &__logo {
+      justify-content: flex-start;
+    }
+    &__box-contact {
+      align-items: flex-start;
+    }
+  }
 }
 .join-us {
   display: flex;
@@ -80,14 +92,17 @@
   @include tablet {
     padding-top: 60px;
   }
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 .newsletter {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  justify-content: center;
   padding-bottom: 60px;
-  max-width: 450px;
 
   &__slogan {
     color: getColor("font-2");
@@ -95,33 +110,40 @@
     font-size: 14px;
     text-transform: uppercase;
   }
+  &__input {
+    height: 50px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 4px;
+    border: 1px solid getBgColor("border-3");
+    padding: 15px 16px;
+    background-color: getBgColor("background-3");
+    color: getBgColor("deafult-2");
+    line-height: 1.07;
+    outline: none;
+    min-width: 305px;
+
+    //min-with dla pozoru,ze niby dziala (hlip hlip)
+  }
+  // Senseju, jak ja to zakomentuje ( &__subscribe) to input ladnie jeździ, co począć!? jak zyc ?
 
   &__subscribe {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 20px;
   }
   @include desktop {
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-top: 60px;
     &__subscribe {
       flex-direction: row;
+      gap: 12px;
     }
-  }
-}
-.subscribe-email-form {
-  height: 50;
-
-  border-radius: 4px;
-  border: 1px solid getBgColor("border-3");
-  padding: 15px 16px;
-  background-color: getBgColor("background-3");
-  color: getBgColor("deafult-2");
-  line-height: 1.07;
-  outline: none;
-  max-width: 450px;
-  width: 100%;
-  @include desktop {
-    max-width: 358px;
+    &__input {
+      max-width: 358px;
+    }
   }
 }
 

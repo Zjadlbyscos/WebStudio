@@ -33,7 +33,9 @@
             <ul class="nav__list">
               <li class="nav__item">
                 <div class="nav__underline">
-                  <a class="nav__link nav__link--active" href="./index.html">Agencja</a>
+                  <a class="nav__link nav__link--active" href="./index.html"
+                    >Agencja</a
+                  >
                 </div>
               </li>
               <li class="nav__item">
@@ -61,19 +63,17 @@
             </a>
           </div>
           <!-- otwarcie okna modalnego mobile (js-open-menu) -->
-        
-            <button
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-              class="nav-button js-open-menu"
-              type="button"
-            >
-              <svg width="40" height="40">
-                <use href="./images/icons.svg#icon-mobile-menu-open"></use>
-              </svg>
-            </button>
-        
-          
+
+          <button
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="nav-button js-open-menu"
+            type="button"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu-open"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -428,14 +428,15 @@
         </div>
         <div class="newsletter">
           <p class="newsletter__slogan">Zapisz się do newslettera</p>
+
           <form
-            name="newsletter__subscribe"
+            name="newsletter_subscribe"
             class="newsletter__subscribe"
             autocomplete="off"
           >
             <label for="subscribe-email-form ">
               <input
-                class="subscribe-email-form"
+                class="newsletter__input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
@@ -547,7 +548,9 @@
         </svg>
       </button>
       <div class="nav-mobile">
-        <a class="nav-mobile__list nav__link--active" href="./index.html">Agencja</a>
+        <a class="nav-mobile__list nav__link--active" href="./index.html"
+          >Agencja</a
+        >
         <a class="nav-mobile__list" href="./portfolio.html">Portfolio</a>
         <a class="nav-mobile__list" href="#">Kontakt</a>
 
@@ -555,10 +558,7 @@
           <a class="nav-mobile__contact--tel" href="tel:+48111111111">
             +48 111 111 111
           </a>
-          <a
-            class="nav-mobile__contact--mail"
-            href="mailto:info@devstudio.com"
-          >
+          <a class="nav-mobile__contact--mail" href="mailto:info@devstudio.com">
             info@devstudio.com
           </a>
         </div>
