@@ -64,6 +64,9 @@
       color: getBgColor('active');
     }}
     }
+    .nav__link--active{
+      color: getBgColor('active');
+    }
 
   .nav-mobile-contact{
     display: flex;
