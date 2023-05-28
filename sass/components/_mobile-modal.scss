@@ -85,6 +85,7 @@
   .nav-mobile-social {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0;
     margin-left: -10px;
     &--link {
