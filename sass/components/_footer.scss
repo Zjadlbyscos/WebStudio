@@ -90,13 +90,12 @@
     text-transform: uppercase;
   }
 
-  &__newsletter-wrapper{
+  &__newsletter-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap:20px;
-
+    gap: 20px;
   }
 
   &__newsletter-input {
@@ -127,7 +126,7 @@
       justify-content: center;
 
       align-items: flex-start;
-      gap:160px;
+      gap: 160px;
     }
   }
 
@@ -135,11 +134,10 @@
     &__container {
       flex-direction: row;
       justify-content: flex-start;
-      gap:60px;
-      
+      gap: 60px;
     }
-    &__wrapper{
-      gap:70px;
+    &__wrapper {
+      gap: 70px;
       width: 100%;
     }
     &__logo {
@@ -147,21 +145,19 @@
     }
     &__address-box {
       align-items: flex-start;
-      
     }
-    &__socials{
+    &__socials {
       align-items: flex-start;
     }
-    &__newsletter{
+    &__newsletter {
       align-items: flex-start;
       width: 100%;
     }
-    &__newsletter-wrapper{
+    &__newsletter-wrapper {
       flex-direction: row;
-      gap:12px;
-      
+      gap: 12px;
     }
-    &__newsletter-input{
+    &__newsletter-input {
       max-width: 358px;
       width: 100%;
     }
