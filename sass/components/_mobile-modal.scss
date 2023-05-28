@@ -1,17 +1,17 @@
 @media (max-width: 767px) {
 .menu-container {
-    
+
     position: fixed;
     inset: 0;
-    padding: 32px;
+    padding: 30px;
     background-color:getBgColor("deafult-2");
     z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+   
   }
   .menu-container.is-open {
     transform: translateX(0);
@@ -42,12 +42,12 @@
 }
 
 .nav-mobile{
-    padding-top: 15px;
-    display: flex;
+  display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    gap:36px;
-    max-width:450px;
+    align-content: space-between;
+    padding-top: 15px;
+     gap:36px;
+     
   
 
     &__list{
@@ -56,7 +56,7 @@
     line-height: 47px;
     color: getColor('font-1');
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer;}
 
 
     &:hover,
@@ -64,7 +64,8 @@
       color: getBgColor('active');
     }
     }
-&__contact{
+
+  .nav-mobile-contact{
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -73,34 +74,32 @@
     &--tel{
         font-size: 34px;
         color: getColor('font-active');
-        text-decoration: none;
-         padding-top: 300px;
+        text-decoration: none;}
     
-    }
     &--mail{
         font-size: 24px;
         color: getColor('font-3');  
-        text-decoration: none;
-         padding-bottom: 64px;
+        text-decoration: none;}  
         
-    }}
-  &__social{
+   }
+
+  .nav-mobile-social{
     display: flex;
     flex-direction: row;
     gap: 0;
+    margin-left: -10px;
     &--link{
         padding:10px;
         font-size: 18px;
         color: getColor('font-active');  
         text-decoration: none;
         border-right:1px solid getBgColor("border-2");
-        cursor: pointer;
-    }
+        cursor: pointer;}
     
-  }
+    }
 
+    
 
-}}
 
 @media (min-width: 768px) {
     .menu-toggle,
@@ -108,3 +107,5 @@
       display: none;
     }
   }
+
+}
