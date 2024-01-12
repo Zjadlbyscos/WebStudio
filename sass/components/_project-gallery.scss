@@ -1,15 +1,21 @@
 .buttons {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
   gap: 8px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .gallery {
-  padding-top: 56px;
+  padding-top: 36px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 30px;
 
   &__box {
@@ -17,6 +23,7 @@
     box-shadow: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 100%;
   }
 
   &__project-title {
@@ -43,6 +50,11 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+  }
+  @include tablet {
+    &__box {
+      max-width: 350px;
+    }
   }
 }
 
