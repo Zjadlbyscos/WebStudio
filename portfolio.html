@@ -46,24 +46,33 @@
             </ul>
           </nav>
           <div class="header__contact">
-          <a class="header__mail" href="mailto:info@devstudio.com">
-            <svg class="header__envelope" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
+            <a class="header__mail" href="mailto:info@devstudio.com">
+              <svg class="header__envelope" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+            <a class="header__tel" href="tel:+48111111111">
+              <svg class="header__telephone" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </div>
+          <button
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="nav-button js-open-menu"
+            type="button"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu-open"></use>
             </svg>
-            info@devstudio.com
-          </a>
-          <a class="header__tel" href="tel:+48111111111">
-            <svg class="header__telephone" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111
-          </a>
-        </div>
+          </button>
         </div>
       </div>
     </header>
     <main>
-     
       <section class="section">
         <div class="container">
           <ul class="buttons">
@@ -85,8 +94,6 @@
               <button type="button" class="button marketing">Marketing</button>
             </li>
           </ul>
-
-         
 
           <ul class="gallery">
             <div class="gallery__box">
@@ -289,13 +296,12 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__wrapper">
-      
           <div class="footer__address">
             <a class="logo footer__logo" href="./index.htmll"
               ><span class="logo__blue">Web</span
               ><span class="logo__bright">Studio</span></a
             >
-           
+
             <address class="footer__address-box">
               <span class="footer__address--str">
                 m. Warszawa, Aleje Jerozolimskie 21</span
@@ -308,7 +314,7 @@
               >
             </address>
           </div>
-         
+
           <div class="footer__socials">
             <h2 class="footer__socials--slogan">DOŁĄCZ DO NAS</h2>
             <ul class="footer__socials--icons">
@@ -336,14 +342,13 @@
           </div>
         </div>
 
-     
         <form
           name="newsletter_subscribe"
           class="footer__newsletter"
           autocomplete="off"
         >
           <h2 class="footer__newsletter-title">Zapisz się do newslettera</h2>
-     
+
           <div class="footer__newsletter-wrapper">
             <input
               class="footer__newsletter-input"
@@ -353,7 +358,6 @@
               id="subscribe-email-form"
               required
             />
-    
 
             <button class="button footer__newsletter-btn" type="submit">
               <svg class="sign-in" width="130" height="30">
@@ -363,5 +367,45 @@
           </div>
         </form>
       </div>
-    </footer>  </body>
+    </footer>
+    <!--okno modalne mobile menu (js-menu-container) -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <!--zamknięcie okna modalnego mobile (js-close-menu) -->
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <div class="nav-mobile">
+        <a class="nav-mobile__list nav__link--active" href="./index.html"
+          >Agencja</a
+        >
+        <a class="nav-mobile__list" href="./portfolio.html">Portfolio</a>
+        <a class="nav-mobile__list" href="#">Kontakt</a>
+      </div>
+
+      <div class="nav-mobile-contact">
+        <a class="nav-mobile-contact--tel" href="tel:+48111111111">
+          +48 111 111 111
+        </a>
+        <a class="nav-mobile-contact--mail" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+      </div>
+      <div class="nav-mobile-social">
+        <a class="nav-mobile-social--link" href="#">Instagram</a>
+        <a class="nav-mobile-social--link" href="#">Twiter</a>
+        <a class="nav-mobile-social--link" href="#">Facebook</a>
+        <a class="nav-mobile-social--link" href="#">Linkedin</a>
+      </div>
+    </div>
+    <!-- skrypt dla okna modalnego mobile menu-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
 </html>
