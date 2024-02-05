@@ -1,5 +1,5 @@
 .custommers {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 30px;
 
@@ -28,12 +28,13 @@
     cursor: pointer;
   }
   @include tablet {
-  
+    display: flex;
   &__box{
     max-width: 226px;
   }}
 
 @include desktop {
+
     gap: 50px;
   
   &__box{
