@@ -10,7 +10,7 @@
 ## Features
 ![App look](./assets/readme.home01.png)
 - Responsive design suitable for desktop and mobile devices.
-![App look](./assets/readme.mobile.png)
+![App look](./assets/readme.mobile01.png)
 - Interactive navigation menu with smooth scrolling.
 - Portfolio section showcasing various projects with categories.
 ![App look](./assets/readme.portfolio01.png)
