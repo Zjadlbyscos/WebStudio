@@ -77,26 +77,26 @@
         <div class="container">
           <ul class="buttons">
             <li>
-              <button type="button" class="button all-kind">Wszystkie</button>
+              <button type="button" class="button all-kind" id="all">Wszystkie</button>
             </li>
             <li>
-              <button type="button" class="button pages">Strony</button>
+              <button type="button" class="button pages" id="pages">Strony</button>
             </li>
             <li>
-              <button type="button" class="button aplications">
+              <button type="button" class="button aplications" id="applications">
                 Aplikacje
               </button>
             </li>
             <li>
-              <button type="button" class="button design">Dizajn</button>
+              <button type="button" class="button design" id="design">Dizajn</button>
             </li>
             <li>
-              <button type="button" class="button marketing">Marketing</button>
+              <button type="button" class="button marketing" id="marketing">Marketing</button>
             </li>
           </ul>
 
           <ul class="gallery">
-            <div class="gallery__box">
+            <div class="gallery__box" id="pages">
               <li>
                 <div class="overlay">
                   <img
@@ -117,7 +117,7 @@
                 <p class="gallery__project-category">Strona internetowa</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="design">
               <li>
                 <div class="overlay">
                   <img
@@ -140,7 +140,7 @@
                 <p class="gallery__project-category">Dizajn</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="aplications">
               <li>
                 <div class="overlay">
                   <img
@@ -161,7 +161,7 @@
                 <p class="gallery__project-category">Aplikacja</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="marketing">
               <li>
                 <div class="overlay">
                   <img
@@ -182,7 +182,7 @@
                 <p class="gallery__project-category">Marketing</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="applications">
               <li>
                 <div class="overlay">
                   <img
@@ -203,9 +203,9 @@
                 <p class="gallery__project-category">Aplikacja</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="pages">
               <li>
-                <div class="overlay">
+                <div class="overlay" >
                   <img
                     src="images/project4.jpg"
                     alt="Projekt Inspiration has no Borders Zdjęcie komputera"
@@ -226,7 +226,7 @@
                 <p class="gallery__project-category">Strona internetowa</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="design">
               <li>
                 <div class="overlay">
                   <img
@@ -247,7 +247,7 @@
                 <p class="gallery__project-category">Dizajn</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="marketing">
               <li>
                 <div class="overlay">
                   <img
@@ -268,7 +268,7 @@
                 <p class="gallery__project-category">Marketing</p>
               </li>
             </div>
-            <div class="gallery__box">
+            <div class="gallery__box" id="aplications">
               <li>
                 <div class="overlay">
                   <img
@@ -407,5 +407,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/portfolio.buttons.js"></script>
+
   </body>
 </html>
